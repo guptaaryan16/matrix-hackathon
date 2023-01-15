@@ -1,0 +1,4 @@
+#Sun Jan 15 05:51:48 IST 2023
+base.0=C\:\\Users\\kanis\\OneDrive\\Desktop\\syntaxerror\\flutter_application_3\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
