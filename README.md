@@ -26,12 +26,14 @@ Dependencies
 Improve the model's accuracy by fine-tuning it on a larger dataset
 Add more functionality like recording multiple words or a sentence
 Improve the UI and add more visualizations of the results
-Contribute
+
+## Contribute
 
 Report issues or request features
 Share your feedback
 Submit pull requests
-License
+
+## License
 
 This project is licensed under the Apache License - see the LICENSE file for details.
 
