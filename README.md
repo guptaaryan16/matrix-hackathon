@@ -4,7 +4,7 @@ The app is an attempt to help people improve their pronounciation and can overco
 
 ## Getting started
 
-- Clone the repository:  `git clone https://github.com/yourusername/pronunciation-checker.git`
+- Clone the repository:  `git clone https://github.com/guptaaryan16/pronunciation-checker.git`
 - Go to the project directory:
 - cd pronunciation-checker
 - Install the dependencies:
