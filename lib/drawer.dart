@@ -11,7 +11,14 @@ class MyDrawer extends StatelessWidget {
     const imageUrl = "https://media.licdn.com/dms/image/C4E03AQGKPQ0btc9dfA/profile-displayphoto-shrink_800_800/0/1642932073490?e=2147483647&v=beta&t=AdvWCiC18bfigcoRfqc8CsVe2ZvppcZWdXzVtN-HvgE";
     return Drawer(
       child: Container(
-        color: Colors.deepPurple,
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              Color.fromARGB(255, 35, 42, 51),
+              Color(0xFF0D0D0D),
+            ]
+          )
+        ), 
         child: ListView(
           padding: EdgeInsets.zero,
           children: const [

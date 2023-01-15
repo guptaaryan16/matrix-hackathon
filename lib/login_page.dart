@@ -17,21 +17,21 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context)
    {
     return Material(
-      color: Colors.white,
+      color: Color(0xFF0D0D0D),
       child: SingleChildScrollView(
-
         child: Form(
           key: _formKey,
           child: Column(
             children:[
               Image.asset(
-                "login_image.png", 
+                "Matrix.png", 
                 fit: BoxFit.cover,
               ),
               const SizedBox(height: 20.0,),
               Text(
                 "Welcome $name",
                 style: const TextStyle(
+                  color: Color(0xFFA66394),
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
                 ),
@@ -43,9 +43,18 @@ class _LoginPageState extends State<LoginPage> {
                  child: Column(
                   children: [
                     TextFormField(
+                      style: TextStyle(color: Colors.white),
                       decoration: const InputDecoration(
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(width: 3 , color: Color(0xFFA66394),
+                          ),
+                        ),
+                        filled: true,
+                        fillColor: Color(0xFF181E26),
                         hintText:"Enter username",
-                        labelText: "Username", 
+                        hintStyle: TextStyle(color: Colors.white),
+                        labelText: "Username",
+                        labelStyle: TextStyle(color: Color(0xFFA66394)), 
                       ),
                       validator: (value)
                       {
@@ -58,11 +67,21 @@ class _LoginPageState extends State<LoginPage> {
                       },
                     ),
                     TextFormField(
+                      style: TextStyle(color: Colors.white),
                       obscureText: true,
                       decoration: const InputDecoration(
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(width: 3 , color: Color(0xFFA66394),
+                          ),
+                        ),
+                        filled: true,
+                        fillColor: Color(0xFF181E26),
                         hintText:"Enter password",
-                        labelText: "Password", 
+                        hintStyle: TextStyle(color: Colors.white),
+                        labelText: "Password",
+                        labelStyle: TextStyle(color: Color(0xFFA66394)), 
                       ),
+          
                       validator : (value)
                       {
                         if(value== null){
@@ -79,7 +98,7 @@ class _LoginPageState extends State<LoginPage> {
               
               
                     Material(
-                      color: Colors.deepPurple,
+                      color: Color(0xFFA66394),
                       borderRadius:
                       BorderRadius.circular(changeButton ? 50 : 8),
                       child: InkWell(

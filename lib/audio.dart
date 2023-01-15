@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:english_words/english_words.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:record/record.dart';
@@ -87,7 +88,9 @@ class _AudioRecorderState extends State<AudioRecorder> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Color(0xFF0D0D0D),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -181,9 +184,11 @@ class _AudioRecorderState extends State<AudioRecorder> {
     if (_recordState != RecordState.stop) {
       return _buildTimer();
     }
-    return const Text(
-      "Speak the word!!!",
-      style: TextStyle(color: Colors.purple),
+    var current = WordPair.random();
+
+    return Text(
+      "Speak the word!!!\n $current",
+      style: const TextStyle(color: Colors.purple , fontSize: 30 , fontWeight: FontWeight.bold),
       );
   }
 
@@ -235,7 +240,9 @@ class _MyAppState extends State<MyAudioApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Color(0xFF0D0D0D),
         body: Center(
           child: showPlayer
               ? Padding(

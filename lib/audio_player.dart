@@ -32,6 +32,7 @@ class AudioPlayerState extends State<AudioPlayer> {
   late StreamSubscription<Duration> _positionChangedSubscription;
   Duration? _position;
   Duration? _duration;
+  double data=0.50;
 
   @override
   void initState() {
@@ -80,6 +81,7 @@ class AudioPlayerState extends State<AudioPlayer> {
                 stop().then((value) => widget.onDelete());
               },
             ),
+            
           ],
         );
       },
